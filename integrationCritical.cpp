@@ -11,7 +11,7 @@ int main()
 	double pi =0;
 	step = 1.0/(double)num_steps;
 	omp_set_num_threads(NUM_THREADS);
-	#pragma omp parallelOpe
+	#pragma omp parallel
 	{
 		int i,id, allocatedThreads;
 		double x, sum =0;
